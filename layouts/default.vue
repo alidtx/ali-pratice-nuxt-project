@@ -29,7 +29,7 @@ import CartIcon from '~/components/Icons/cartIcon.vue';
         </div>
     </header>
 
-    <main class="flex-1 w-full max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-8 md:py-12">
+    <main class="mx-auto max-w-7xl px-4 pb-24 pt-24 sm:px-6 lg:px-8">
         <slot />
     </main>
 
