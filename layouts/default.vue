@@ -15,6 +15,10 @@ import CartIcon from '~/components/Icons/cartIcon.vue';
                 </div>
             </div>
             <div class="hidden md:flex items-center gap-6">
+                <NuxtLink to="/" class="text-gray-600 hover:text-indigo-600">
+                    Shop
+                </NuxtLink>
+
                 <NuxtLink to="/about" class="text-gray-600 hover:text-indigo-600">
                     About
                 </NuxtLink>
