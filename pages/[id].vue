@@ -49,7 +49,7 @@ const product = computed(() => {
                     Product details description here.
                 </p>
 
-                <button
+                <button @click="store.addToCart(product)"
                     class="bg-indigo-600 text-white px-6 py-3 rounded-lg hover:bg-indigo-700 transition"
                 >
                     Add To Cart

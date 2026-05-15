@@ -56,8 +56,7 @@ async function onSubmit () {
       path: `/invoice/${res.order.id}`,
       state: { orderData: res.order }
     })
-
-
+   store.clearCart() 
   } catch (error) {
     toast.error('Order failed')
   }
