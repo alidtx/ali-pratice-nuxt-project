@@ -37,8 +37,8 @@ const store = useProductStore()
                     ${{ product.price }}
                 </span>
 
-                <button class="bg-indigo-600 text-white text-sm px-3 py-1 rounded-md hover:bg-indigo-700 transition">
-                    Add
+                <button @click.stop="store.addToCart(product)" class="bg-indigo-600 text-white text-sm px-3 py-1 rounded-md hover:bg-indigo-700 transition">
+                    add to cart
                 </button>
             </div>
 

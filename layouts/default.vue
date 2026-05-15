@@ -1,38 +1,11 @@
 <script setup>
-import CartIcon from '~/components/Icons/cartIcon.vue';
+import NavBar from '~/components/NavBar.vue';
 
 
 </script>
 
 <template>
-    <header class="sticky top-0 z-30 bg-white shadow-md backdrop-blur-sm bg-white/95">
-        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-4 flex flex-wrap items-center justify-between gap-4">
-            <div class="flex items-center gap-2">
-                <div>
-                    <h1 class="text-xl font-bold tracking-tight text-gray-800"><NuxtLink to="/">Ali's <span
-                            class="text-indigo-600">Store</span></NuxtLink></h1>
-                    <p class="text-xs text-gray-500 hidden sm:block">buying best</p>
-                </div>
-            </div>
-            <div class="hidden md:flex items-center gap-6">
-                <NuxtLink to="/" class="text-gray-600 hover:text-indigo-600">
-                    Shop
-                </NuxtLink>
-
-                <NuxtLink to="/about" class="text-gray-600 hover:text-indigo-600">
-                    About
-                </NuxtLink>
-
-                <NuxtLink to="/contact" class="text-gray-600 hover:text-indigo-600">
-                    Contact
-                </NuxtLink>
-            </div>
-            <div class="flex items-center gap-4">
-                <CartIcon/>
-            </div>
-        </div>
-    </header>
-
+    <NavBar />
     <main class="mx-auto max-w-7xl px-4 pb-24 pt-24 sm:px-6 lg:px-8">
         <slot />
     </main>
