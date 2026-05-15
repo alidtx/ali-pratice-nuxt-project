@@ -14,6 +14,7 @@ const store = useProductStore()
 </script>
 
 <template>
+    <NuxtLink :to="`/${product.id}`">
     <div class="bg-white border border-gray-200 rounded-xl shadow-sm hover:shadow-md transition overflow-hidden">
         <div class="h-40 bg-gray-100 flex items-center justify-center">
             <img v-if="product.imageSrc" :src="product.imageSrc" class="h-full w-full object-cover" />
@@ -44,4 +45,5 @@ const store = useProductStore()
         </div>
 
     </div>
+    </NuxtLink>
 </template>
