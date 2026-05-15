@@ -52,9 +52,11 @@ async function onSubmit () {
       body: payload
     })
 
-    toast.success(`Order placed: ${res.order.order_number}`)
+    await navigateTo({
+      path: `/invoice/${res.order.id}`,
+      state: { orderData: res.order }
+    })
 
-    store.clearCart()
 
   } catch (error) {
     toast.error('Order failed')
